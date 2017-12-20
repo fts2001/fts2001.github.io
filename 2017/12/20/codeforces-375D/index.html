@@ -125,7 +125,7 @@
 <meta property="og:site_name" content="Tianshu Feng&#39;s Blog">
 <meta property="og:description" content="这题不愧“下金蛋的母鸡”，解法确实多种多样，下面我就来总结一下这题的各种算法。  莫队算法 两种实现： 数组（“后缀和”），复杂度$O(n\sqrt{n})$ BIT维护前缀和，复杂度$O(n\sqrt{n}\log_2{n})$   是最容易想到的算法，且实现简单效率高  启发式合并（非平衡树） 可用数组、map、vector等实现，复杂度$O(n\log_2{n})$ 代码最短，但实现不">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-20T15:48:53.769Z">
+<meta property="og:updated_time" content="2017-12-20T16:00:05.246Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="下金蛋的母鸡——Codeforces 375D总结">
 <meta name="twitter:description" content="这题不愧“下金蛋的母鸡”，解法确实多种多样，下面我就来总结一下这题的各种算法。  莫队算法 两种实现： 数组（“后缀和”），复杂度$O(n\sqrt{n})$ BIT维护前缀和，复杂度$O(n\sqrt{n}\log_2{n})$   是最容易想到的算法，且实现简单效率高  启发式合并（非平衡树） 可用数组、map、vector等实现，复杂度$O(n\log_2{n})$ 代码最短，但实现不">
@@ -426,7 +426,7 @@
 <li>以上算法均不如前三种算法（至少给定的程序中以上算法没有人AC）</li>
 </ul>
 <h3 id="注意事项及总结"><a href="#注意事项及总结" class="headerlink" title="注意事项及总结"></a>注意事项及总结</h3><ul>
-<li>对于其中很多种方法，只要把BIT维护前缀和改为纯数组维护“后缀和”就可以去掉一个$log_2{n}$，效率提升不少（虽然BIT常数很小）</li>
+<li>对于其中很多种方法，只要把BIT维护前缀和改为纯数组维护“后缀和”就可以去掉一个$\log_2{n}$，效率提升不少（虽然BIT常数很小）</li>
 <li>不要盲目运用平衡树等数据结构，往往存在着更为简单好写的做法</li>
 </ul>
 
@@ -909,24 +909,7 @@
         }
       });
     </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
